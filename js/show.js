@@ -2,10 +2,10 @@ const button = document.querySelector("#nav-bar--show")
 const chosenImg = document.getElementById("chosenImg");
 
 function showImage(event){
-    chosenImg.innerHTML = '<div>hi</div>';
+    chosenImg.innerHTML = '<img id="show--img" src="../img/cat_meme.png">';
 }
 function hideImage(){
-    chosenImg.
+    chosenImg.innerHTML = '';
 }
 
 
