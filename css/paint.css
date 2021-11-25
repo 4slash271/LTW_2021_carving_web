@@ -14,11 +14,10 @@ body{
     padding-top: 40px;
 }
 .nav-bar{
-    
+    z-index: 99;
 }
-.nav-bar--show{
+.nav-bar-btn{
     position: absolute;
-    left: 0em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,12 +29,16 @@ body{
     border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
-#show--img{
-    width:40em;
+#show-img{
+    width:41em;
     
 }
-.nav-bar > .nav-bar--show> .open-show-btn{
-    right:40em;
+.open-btn{
+    left: 40em;
+}
+.hide-btn{
+    left: 40em;
+    left: 0em;
 }
 #c{
     width: 600px;
@@ -56,25 +59,25 @@ body{
     position: absolute;
     margin-top: -5em;
     margin-left: 8em;
-    z-index: 99; 
+    z-index: 2; 
 }
 .controls .controls__btns #jsRedo{
     position: absolute;
     margin-top: -5em;
     margin-left: 10.5em;
-    z-index: 99; 
+    z-index: 2; 
 }
 .controls .controls__btns #jsMode{
     position: absolute;
     margin-top: -5em;
     margin-left: 13em;
-    z-index: 99; 
+    z-index: 2; 
 }
 .controls .controls__btns #jsSend{
     position: absolute;
     margin-top: -5em;
     margin-left: 15.5em;
-    z-index: 99; 
+    z-index: 2; 
 }
 
 .controls .controls__btns button{
