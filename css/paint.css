@@ -18,28 +18,33 @@ body{
 }
 .nav-bar-btn{
     position: absolute;
+    left: 0em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(150, 173, 164);
     font-size: 1.3em;
     font-family: 'Josefin Sans', sans-serif;
-    width: 5em;
-    height: 3em;
+    width: 3.2em;
+    height: 2em;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
-#show-img{
+#chosenImg{
+    /* position: absolute; */
     width:41em;
-    
+     right: -421em;
+}
+#show-img{
+    width: 100%;
+    transform: translateX(100% + 41em);
+    transition: transform 1.5s ease-in;
 }
 .open-btn{
-    left: 40em;
+    transform: translateX(calc(41em - 26%));
+    transition: transform 0.5s ease-in;
 }
-.hide-btn{
-    left: 40em;
-    left: 0em;
-}
+
 #c{
     width: 600px;
     height: 600px;
