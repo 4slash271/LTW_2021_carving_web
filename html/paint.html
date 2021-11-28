@@ -12,34 +12,41 @@
     <title>그림판</title>
 </head>
 <body>
-  <div class="nav-bar">
-      <button class="nav-bar-btn">
-       <span>Show</span>
-       
+<!------------------imgPop---------------------->
+<div class="imgPop">
+    <div id="imgPop--stage">
+      <button class="imgPop--btn">
+        <span>Show</span>
+        
       </button>
       <div id="chosenImg"></div>
+    </div>
+</div>
+  
+<!-------------------canvas--------------------->
+<div class="canvas">
+  <canvas height="600" width="600" id="c"></canvas>
+  <div class="controls">
+    <div class="controls__btns">
+      
+      <button id="jsUndo" class="btn btn-info">
+        <i class="fas fa-undo"></i>
+      </button>      
+      <button id="jsRedo" class="btn btn-info">
+        <i class="fas fa-redo"></i>
+      </button>      
+      <button id="jsMode" class="btn btn-info">
+        <i class="fas fa-pencil-alt"></i>
+      </button>      
+      <button id="jsSend" class="btn btn-info">
+        <i class="fab fa-telegram-plane"></i>
+      </button>      
+    </div>
   </div>
-
-    <canvas height="600" width="600" id="c"></canvas>
-    <div class="controls">
-        <div class="controls__btns">
-          
-          <button id="jsUndo" class="btn btn-info">
-              <i class="fas fa-undo"></i>
-          </button>      
-          <button id="jsRedo" class="btn btn-info">
-              <i class="fas fa-redo"></i>
-          </button>      
-          <button id="jsMode" class="btn btn-info">
-            <i class="fas fa-pencil-alt"></i>
-          </button>      
-          <button id="jsSend" class="btn btn-info">
-            <i class="fab fa-telegram-plane"></i>
-          </button>      
-        </div>
-  </div>
-          
-    
+</div>
+<!---------------------------------------->
+  
+  
 </body>
 <script src="../js/paint.js"></script>
 <script src="../js/undo_redo.js"></script>
