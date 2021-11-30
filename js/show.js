@@ -2,6 +2,7 @@ const imgPop = document.querySelector(".imgPop");
 const imgPopStage = document.querySelector("#imgPop--stage");
 const imgPopBtn = document.querySelector(".imgPop--btn");
 const chosenImg = document.querySelector("#chosenImg");
+const canvas = document.querySelector('.canvas');
 let open = false;
 
 function showImage(){
@@ -14,6 +15,8 @@ function showImage(){
   } else {
       chosenImg.style.display = "block";
       imgPopStage.classList.add("pop");
+      canvas.classList.add("")
+
   }
     
 }
