@@ -2,12 +2,12 @@ const imgPop = document.querySelector(".imgPop");
 const imgPopStage = document.querySelector("#imgPop--stage");
 const imgPopBtn = document.querySelector(".imgPop--btn");
 const chosenImg = document.querySelector("#chosenImg");
-const canvas = document.querySelector('.canvas');
-let open = false;
+// const canvas = document.querySelector('.canvas');
+// let open = false;
 
 function showImage(){
     
-    chosenImg.innerHTML = '<img id="show-img" src="../img/cat_meme.png">';
+    chosenImg.innerHTML = '<img id="show-img" src="../src/img/cat_meme.png">';
 
     if (chosenImg.style.display === "block"){
         chosenImg.style.display = "none";
@@ -19,7 +19,7 @@ function showImage(){
 
   }
     
-}
+};
 // function hideImage(){
 //     // open === false;
 //     if (imgPopBtn.style.display === "none") 
