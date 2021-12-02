@@ -36,7 +36,7 @@
 			예를 들어, setSize(window.innerWidth/2, window.innerHeight/2, false) 는 <canvas>의 너비와 높이가 100%인 경우 앱을 절반 해상도로 렌더링합니다.*/
 		    //document에 렌더러 추가
             const renderer = new THREE.WebGLRenderer({ antialias: true });
-            renderer.setSize( window.innerWidth, window.innerHeight );
+            renderer.setSize( window.innerWidth/3, window.innerHeight/3 );
             document.body.appendChild( renderer.domElement );
 
 
@@ -44,7 +44,7 @@
 			//1. geometry/BoxGeometry 큐브의 모든 점과 면을 포함하는 객체
             //2. material/MeshBasicMaterial은 16진수 색으로 표면 표현
 			//3. mesh/메쉬는 geometry에 material를 적용하는 객체
-			const geometry = new THREE.BoxGeometry(1,1,1);
+			const geometry = new THREE.BoxGeometry(1.5,1.5,1.5);
             const material = new THREE.MeshLambertMaterial( { color: 0xffffff } );
             const cube = new THREE.Mesh( geometry, material );
             scene.add( cube );
@@ -76,12 +76,12 @@
 			//위에서 언급한 것들이 순서대로 진행됩니다.
 			window.addEventListener("resize", handleResize);
 
-			const rotateObj = () => {
-            const speed = Math.floor(Math.random() * 3);
-            cube.rotation.y += (Math.PI * speed) / 180;
-            renderer.render(scene, camera);
-            requestAnimationFrame(rotateObj);
-            };
+			// const rotateObj = () => {
+            // const speed = Math.floor(Math.random() * 3);
+            // cube.rotation.y += (Math.PI * speed) / 180;
+            // renderer.render(scene, camera);
+            // requestAnimationFrame(rotateObj);
+            // };
          
 
 		

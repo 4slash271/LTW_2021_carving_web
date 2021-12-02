@@ -15,7 +15,7 @@ function showImage(){
   } else {
       chosenImg.style.display = "block";
       imgPopStage.classList.add("pop");
-      canvas.classList.add("")
+    //   canvas.classList.add("")
 
   }
     
