@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/info.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <title>상상 동물 릴레이 조각 안내서</title>
 </head>
 <body>
-    <h4>상상 동물 릴레이 조각 작업실에 오신걸 환영합니다!</h4>
-    
+    <h4>about</h4>
+    <div class="info">
+        <span>
+             <div style="display: inline;"onclick="clickInfo()">루이즈더우먼</div>
+            <a href="https://louisethewomen.org/"> <i class="fas fa-long-arrow-alt-right"> </i>	
+            </a> 
+            <div class="infoLTW"  style="display: none; color: #666666;"><span id="gray">시각 예술 분야
+                여성 예술인 네트워크 
+                루이즈 더 우먼입니다.</span></div>
+           
+        </span><br>
+        <span> 우먼즈랩탑 선데이</span>
+        <br>
+       
+            <span><a href="#">우먼즈랩탑 콘퍼런스</a></span>
+    </div>
+
+    <script>
+    function clickInfo(){
+        const infoLTW = document.querySelector(".infoLTW");
+        if (infoLTW.style.display === "block")
+        {
+            infoLTW.style.display = "none";
+       } else {
+        infoLTW.style.display = "block";
+    };
+}
+
+
+
+
+</script>
 </body>
+
 </html>

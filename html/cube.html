@@ -16,8 +16,6 @@
 		<script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
 		
 		<script src="../controls/DragControls.js"></script>
-
-		<!-- <script src="../js/TransFormControls.js"></script> -->
 		<script>
 		const Init = () => {
 			//three로 표현하기 위해서는 scene, camera, renderer가 필요하다.
@@ -36,7 +34,7 @@
 			예를 들어, setSize(window.innerWidth/2, window.innerHeight/2, false) 는 <canvas>의 너비와 높이가 100%인 경우 앱을 절반 해상도로 렌더링합니다.*/
 		    //document에 렌더러 추가
             const renderer = new THREE.WebGLRenderer({ antialias: true });
-            renderer.setSize( window.innerWidth/3, window.innerHeight/3 );
+            renderer.setSize( window.innerWidth, window.innerHeight );
             document.body.appendChild( renderer.domElement );
 
 
@@ -76,12 +74,12 @@
 			//위에서 언급한 것들이 순서대로 진행됩니다.
 			window.addEventListener("resize", handleResize);
 
-			// const rotateObj = () => {
-            // const speed = Math.floor(Math.random() * 3);
-            // cube.rotation.y += (Math.PI * speed) / 180;
-            // renderer.render(scene, camera);
-            // requestAnimationFrame(rotateObj);
-            // };
+			const rotateObj = () => {
+            const speed = Math.floor(Math.random() * 3);
+            cube.rotation.y += (Math.PI * speed) / 180;
+            renderer.render(scene, camera);
+            requestAnimationFrame(rotateObj);
+            };
          
 
 		

@@ -6,18 +6,26 @@
     font-family: 'Josefin Sans', sans-serif;
 } */
 
-
+@font-face { 
+	font-family: 'Authentic Sans';
+	 src: url('../src/font/AUTHENTICSans-130.otf')format('otf')
+}
+	
 
 body {
-
+    position: fixed;
 	margin: 0;
-	background-color: #FE4242;
-	color: #fff;
-	font-family: 'Josefin Sans', sans-serif;
+	background-color: #F8F8F6;
+	/* color: #fff; */
+	font-family: 'Authentic Sans','Gothic A1';
 	font-size: 16px;
 	line-height: 24px;
 	overscroll-behavior: none;
 }
+
+
+
+
 /*********************/
 .nav{
 	margin-top: 5em;
@@ -39,24 +47,121 @@ body {
 h3{
 	font-size: 1.8em;
 }
-a {
-	color: #ff0;
+a{
+	color: #666666;
 	text-decoration: none;
 }
+button {
+	color: #666666;
+	background-color: #F8F8F6;
+	text-decoration: none;
+}
+.menu{
+	display: flex;
+	
+}
 .menu--section{
+font-family:'Gothic A1'
+}
+#def--imagineAnimal{
+	position: relative;
+    left: 8em;
+	top:4.2em;
+	transform: rotate(-22deg);
+}
+
+#def--sculpture{
+	background-color: #FFADFC;
+	width: 2em;
+	height: 1em;
+	padding: 0.3em 0 0 0;
+
+	position: relative;
+    left: 30em;
+	top:2.3em;
+	transform: rotate(13deg);
+}
+#def--relay{
+	z-index: 99;
+	/* background-color: #FFADFC; */
+	/* width: 3em; */
+	height: 1em;
+	padding: 0.3em 0 0 0;
+
+	position: relative;
+    left: 35em;
+	top:16em;
+
 
 }
-#def--imagineAnimal{}
-#def--sculpture{}
-#def--relay{}
+#def--relay a{
+	
+	display: flex;
+	flex-direction: column;
+}
+#def--relay a i{
+	transform: rotate(-15deg);
+	top:-1em;
+	left: 1em;
+	position: absolute;
+}
 
+.guide--imagineAnimal{
+	position: fixed;
+	_position: absolute;
+	top: 12em;
+	left: 24em;
+	width: 10em;
+	height: 20em;
+	z-index: 100;
+	border: 1px solid #DA4D4D;
+	background-color: #F8F8F6;
+	/* border-radius: 10%; */
+}
 /************************/
 .semicircle{
-	background-color: #C4F6F3;
-	opacity: 40%;
+	
+	/* opacity: 40%; */
 	width: 100%;
     height: 50em;
 	position: fixed;
-    top: 25em;
+    top: 18em;
+	border:2px solid #DA4D4D;
     border-radius:50% 50% 0 0;
  }
+ /*********************/
+ .tag--writers{
+	 
+	 color: #0047FF;
+	 font-family: 'Gothic A1'; 
+	 display: flex;
+	 flex-direction: row;
+	 align-items:flex-start;
+	 /* justify-content:space-around; */
+	 position: relative;
+	 /* position: absolute; */
+	 left:60em;
+	 top: 15em;
+	}
+
+ .vector--tags{
+	 margin: 0;
+}
+
+.vector{
+	width: 4em;
+	height: 0.6em;
+	margin: 0;
+	padding: 0;
+}
+
+.text--tag{
+	left: -1em;
+	margin: 0;
+	font-size: 0.9em;
+	line-height: 1;
+	/* width: 9em;  */
+    }
+
+
+ 
