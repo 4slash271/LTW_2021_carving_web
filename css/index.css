@@ -15,7 +15,8 @@
 body {
     position: fixed;
 	margin: 0;
-	background-color: #F8F8F6;
+	background-image: url("../src/img/bosch.jpeg");
+	/* background-color: #1F1C1A; */
 	/* color: #fff; */
 	font-family: 'Authentic Sans','Gothic A1';
 	font-size: 16px;
