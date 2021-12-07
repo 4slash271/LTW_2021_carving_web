@@ -16,7 +16,7 @@ body {
     position: fixed;
 	margin: 0;
 	background-image: url("../src/img/bosch.jpeg");
-	/* background-color: #1F1C1A; */
+	background-color: #1F1C1A;
 	/* color: #fff; */
 	font-family: 'Authentic Sans','Gothic A1';
 	font-size: 16px;
@@ -120,15 +120,14 @@ font-family:'Gothic A1'
 	/* border-radius: 10%; */
 }
 /************************/
-.semicircle{
-	
-	/* opacity: 40%; */
-	width: 100%;
-    height: 50em;
-	position: fixed;
-    top: 18em;
-	border:2px solid #DA4D4D;
-    border-radius:50% 50% 0 0;
+.semicircle{	
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: rgba(216, 215, 180,0.4);
+	width: 70em;
+    height: 30em;
+    border-radius:50% ;
  }
  /*********************/
  .tag--writers{
