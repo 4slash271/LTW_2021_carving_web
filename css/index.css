@@ -68,9 +68,34 @@ h3{
 	/* border: 0.3px solid #2c2c2c1a; */
     border-radius:50% ;
 	transform: skew(-10deg);
-	
-	
 }
+#tag{
+	position: absolute;
+	justify-content: center;
+	width: 55em;
+	height: 40em;
+	left: 15em;
+	z-index: 99;
+	border: 1px solid red ;
+}
+.main-tag{
+	width: 30%;
+	height: 35%;
+	transform: translateX(50%);
+	transform: translateY(70%);
+	border: 1px solid red ;
+}
+.sub-tag{
+
+	width: 15%;
+	height: 5%;
+	border: 1px solid red ;
+
+}
+
+
+
+
 
 /*********************/
 .nav{
