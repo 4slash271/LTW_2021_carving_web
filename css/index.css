@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './info.css';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&display=swap');
 @import url('../src/font/Paysage-Black.woff');
@@ -55,6 +56,7 @@
 }
 body {
   display: flex;
+  flex-direction: row;
   white-space: nowrap;
   width: 400%;
   height: 789px;
@@ -65,14 +67,21 @@ body {
 
 .wrapper {
   position: relative;
-  display: flex;
+  /* display: flex; */
   border: 1px solid red;
+
+  width: 25%;
+  height: 100%;
+  margin: auto;
+  /* overflow: hidden; */
+}
+.main {
+  display: flex;
+
+  flex-direction: column;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  margin: auto;
 }
 h3 {
   font-size: 5em;
@@ -103,27 +112,6 @@ h3 {
   height: 40em;
   left: 15em;
   z-index: 99;
-}
-.tag {
-  /* background:  radial-gradient(ellipse at center, var(--white)20%, var(--roseFog)50%, var(--tuatara) 80%); */
-  /* opacity: 0.4; */
-  color: var(--monsoon);
-  font-family: 'Gothic A1', sans-serif;
-  font-weight: 400;
-  border-radius: 50%;
-}
-.main-tag {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28%;
-  height: 10%;
-  transform: translate(40em, 20em);
-}
-.sub-tag {
-  width: 20%;
-  height: 10%;
-  transform: translate(5em, 10em);
 }
 
 /************************************************/
