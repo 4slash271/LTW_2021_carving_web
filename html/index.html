@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    
     <title>환상 동물 릴레이 조각</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="info wrapper">
+     <h4 class="info__title">about</h4>
+     <ul class="info__wrap">
+        <li class="info__ltw card">
+            <span class="info__ltw__btn"style="display: inline;"onclick="clickInfo()">루이즈더우먼</span>
+            <a href="https://louisethewomen.org/"> 
+               <i class="fas fa-long-arrow-alt-right"> </i>	
+            </a> 
+            <div class="infoLTW"  style="display: none; color: #666666;">
+              <span>시각 예술 분야 여성 예술인 네트워크 루이즈 더 우먼입니다.</span>
+            </div>  
+        </li>
+        <li class="info__wlt card" >
+            <span> 우먼즈랩탑 선데이</span>
+        </li>    
+        <li class="info__confer card"> 
+            <a href="#">우먼즈랩탑 콘퍼런스</a>
+        </li>
+      
+     </ul>
+    </div>
+
+    <div class="wrapper main">
       <h3>magical creatures</h3>
       <div class="circle--wrapper">
         <div class="circle"></div>
@@ -28,62 +49,27 @@
     </div>
     <div class="wrapper"></div>
     <div class="wrapper"></div>
-    <div class="wrapper"></div>
-
-    <!-- 		
-	<div class="nav">
-		<a class="nav--section" href="/html/index.html"><i class="fas fa-home"></i></a>
-		<a class="nav--section" href="/html/info.html"><i class="fas fa-info-circle"></i></a>
-	</div>
-
-   <div class="guide--imagineAnimal" style="display: none;">
-	  
-   </div>
-
-	<div class="menu">
-		<h3 class="menu--section" id="def--imagineAnimal">
-			<button onclick="popAnimal()">상상 동물</button>
-			
-		</h3>
-		<h3 class="menu--section" id="def--sculpture">
-			<a href="../html/cube.html">조각</a>
-		</h3>
-		<h3 class="menu--section" id="def--relay">
-			<a href="../html/paint.html">릴레이
-				<i class="fas fa-long-arrow-alt-right"></i>	
-				
-
-			</a>
-		</h3>
-		
-	
-			
-		</h3>
-	</div> -->
-    <!-- <div class="statue--stage">
 
 
-		<div class="eclipse"></div>
-	</div>
-		<div class="tag--writers">
-			<div class="vector--tags">
-			<div class="vector"><img src="../src/img/Vector.png" alt="꼬리표"></div>
-			<div class="vector"><img src="../src/img/Vector.png" alt="꼬리표"></div>
-			<div class="vector"><img src="../src/img/Vector.png" alt="꼬리표"></div>
-		</div>
-			<div class="text--tag">
-				<div class="text">2021.12.04.김슬기 추가</div>
-				<div class="text">2021.12.04.루이드더우먼 추가</div>
-				<div class="text">2021.12.04.우먼스랩탑 추가</div>
-			</div>
-		</div>
-
-		<div class="tag--writer"></div> -->
-<script>
-  console.log(window.innerWidth);
-  console.log(window.innerHeight);
-  console.log(window.outerHeight);
+    
+    <script> 
+    function clickInfo(){
+      const infoLTW = document.querySelector(".infoLTW");
+      if (infoLTW.style.display === "block")
+      {
+          infoLTW.style.display = "none";
+      } 
+      else {
+      infoLTW.style.display = "block";
+      };
+      }
+      
+     
+ 
 </script>
+
     <script src="../js/index.js"></script>
+    <script src="../js/info.js"></script>
+    <!-- <script src="../js/gallery.js"></script> -->
   </body>
 </html>
