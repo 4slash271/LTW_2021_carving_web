@@ -1,11 +1,11 @@
-.info {
+.gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 16px;
   color: #666666;
 }
-.info__title {
+.gallery__title {
   position: relative;
   width: 100%;
   display: flex;
@@ -13,29 +13,18 @@
   align-items: flex-end;
   margin: 1em 0;
 }
-.info__title__text {
+.gallery__title__text {
   position: absolute;
   right: -1em;
   font-family: 'Messapia-Regular';
 }
 
-.info__wrap {
+.gallery__wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
   margin-top: 2em;
 }
-.info__wrap .card {
-  width: 23%;
-  height: 30em;
-  background-color: #e2e2e23a;
-  color: #ff5e00;
-  border-radius: 20px;
-  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.4);
-  transition: transform 1.2s;
-}
-i {
-  transform: rotate(-20deg);
-}
+
 /**********************************************/

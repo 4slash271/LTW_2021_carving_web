@@ -11,9 +11,36 @@
     <title>환상 동물 릴레이 조각</title>
   </head>
   <body>
+    <div class="intro wrapper"></div> 
+
+    <div class="main wrapper">
+      <h3 class="main__title">
+        <span class="main__title__text">magical creatures</span>
+      </h3>
+      <div class="circle__wrapper">
+        <div class="circle"></div>
+      </div>
+      <h3 class="main__title">
+        <span class="main__title__text">constructor</span>
+      </h3>
+      
+    </div>
+
+    <div class="gallery wrapper">
+      <h3 class="gallery__title">
+        <span class="gallery__title__text">gallery</span>
+      </h3>
+      <ul class="gallery_wrap"></ul>
+    </div>
+
     <div class="info wrapper">
-     <h4 class="info__title">about</h4>
-     <ul class="info__wrap">
+     <h3 class="info__title">
+       <span class="info__title__text">about</span>
+      </h3>
+     <ul class="info__wrap">  
+       <li class="info__project card"> 
+            <a href="#">환상동물릴레이조각에 대하여</a>
+        </li>
         <li class="info__ltw card">
             <span class="info__ltw__btn"style="display: inline;"onclick="clickInfo()">루이즈더우먼</span>
             <a href="https://louisethewomen.org/"> 
@@ -26,31 +53,12 @@
         <li class="info__wlt card" >
             <span> 우먼즈랩탑 선데이</span>
         </li>    
-        <li class="info__confer card"> 
-            <a href="#">우먼즈랩탑 콘퍼런스</a>
-        </li>
+      
       
      </ul>
     </div>
 
-    <div class="wrapper main">
-      <h3>magical creatures</h3>
-      <div class="circle--wrapper">
-        <div class="circle"></div>
-      </div>
-
-      <h3>constructor</h3>
-      <div class="tag--wrapper">
-        <div class="main-tag tag">
-          <span>만든 날짜, 만든 사람, 어쩌구</span>
-        </div>
-        <div class="sub-tag tag"></div>
-      </div>
-    </div>
     <div class="wrapper"></div>
-    <div class="wrapper"></div>
-
-
     
     <script> 
     function clickInfo(){
@@ -70,6 +78,70 @@
 
     <script src="../js/index.js"></script>
     <script src="../js/info.js"></script>
+    <script src="../js/three.js"></script>
+		<script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+		
+		<script src="../controls/DragControls.js"></script>
+    <script>
+			//scene 생성	
+			let scene = new THREE.Scene();
+			scene.background = new THREE.Color(0xffffff);
+
+			//카메라 생성
+			let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 01, 1000 );
+
+	        //렌더러 생성
+			let renderer = new THREE.WebGLRenderer();
+			//렌더러의 사이즈
+            renderer.setSize( window.innerWidth, window.innerHeight );
+
+			//html에 추가
+            const intro = document.querySelector(".intro");
+            intro.appendChild( renderer.domElement );
+
+
+			//geometry생성        
+			var geometry = new THREE.BoxGeometry(1.5,1.5,1.5);
+			//material 생성
+            const material = new THREE.MeshLambertMaterial( { color: 0xffffff } );
+			//변수 cube 선언, 위의 material mesh로 받아오기
+            let cube = new THREE.Mesh( geometry, material );
+			//scene에 cube 추가
+            scene.add( cube );
+
+			//카메라의 위치(깊이)
+            camera.position.z= 5;
+			//카메라의 포커스 좌표
+			camera.lookAt( 0, 0, 0 );
+			//cybe의 각도(원근감 느껴지도록 보이는)
+			cube.rotation.x = (Math.PI * 30) / 180;
+			cube.rotation.y = (Math.PI * 30) / 180;
+
+			//조명변수 light
+			const light = new THREE.PointLight();
+			//조명의 위치
+            light.position.set(25, 50, 50);
+			//scene에 조명 추가
+            scene.add(light);
+
+
+			//화면에서 보기 위한 애니메이션 
+			function animate() {
+	        requestAnimationFrame( animate );
+			//y축으로 회전
+			cube.rotation.y += 0.1;
+	        renderer.render( scene, camera );
+            }
+			
+            
+            animate();
+
+
+			//cube를 드래그 할 수 있게 해준다
+            const obj = [cube];
+            const dragControls = new THREE.DragControls(obj, camera, renderer.domElement);
+          
+       </script>
     <!-- <script src="../js/gallery.js"></script> -->
   </body>
 </html>

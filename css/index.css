@@ -1,5 +1,6 @@
 @import './reset.css';
 @import './info.css';
+@import './gallery.css';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&display=swap');
 @import url('../src/font/Paysage-Black.woff');
@@ -58,7 +59,7 @@ body {
   display: flex;
   flex-direction: row;
   white-space: nowrap;
-  width: 400%;
+  width: 500%;
   height: 789px;
   /* background: var(--grad) no repeat; */
   font-size: 16px;
@@ -69,16 +70,13 @@ body {
   position: relative;
   /* display: flex; */
   border: 1px solid red;
-
-  width: 25%;
+  width: 20%;
   height: 100%;
   margin: auto;
   /* overflow: hidden; */
 }
 .main {
   display: flex;
-
-  flex-direction: column;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -88,10 +86,9 @@ h3 {
   font-family: 'Messapia-Regular';
   color: transparent;
   text-shadow: var(--textShadow);
-  transform: skew(-20deg);
-  transform: translateX(-10%);
+  transform: translateX(-10%) skew(-25deg);
 }
-.circle--wrapper {
+.circle__wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -105,30 +102,8 @@ h3 {
   transform: skew(-10deg);
   border-radius: 50%;
 }
-.tag--wrapper {
-  position: absolute;
-  justify-content: center;
-  width: 55em;
-  height: 40em;
-  left: 15em;
-  z-index: 99;
-}
 
 /************************************************/
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 5em;
-  margin-left: 5em;
-}
-.nav--section {
-  margin-bottom: 2em;
-  font-size: 20px;
-}
-.nav--section:last-child {
-  margin-left: 0.15em;
-}
 
 /***********************/
 
@@ -146,58 +121,6 @@ button {
 }
 .menu--section {
   /* font-family:'Gothic A1' */
-}
-#def--imagineAnimal {
-  position: relative;
-  left: 8em;
-  top: 4.2em;
-  transform: rotate(-22deg);
-}
-
-#def--sculpture {
-  background-color: #ffadfc;
-  width: 2em;
-  height: 1em;
-  padding: 0.3em 0 0 0;
-
-  position: relative;
-  left: 30em;
-  top: 2.3em;
-  transform: rotate(13deg);
-}
-#def--relay {
-  z-index: 99;
-  /* background-color: #FFADFC; */
-  /* width: 3em; */
-  height: 1em;
-  padding: 0.3em 0 0 0;
-
-  position: relative;
-  left: 35em;
-  top: 16em;
-}
-#def--relay a {
-  display: flex;
-  flex-direction: column;
-}
-#def--relay a i {
-  transform: rotate(-15deg);
-  top: -1em;
-  left: 1em;
-  position: absolute;
-}
-
-.guide--imagineAnimal {
-  position: fixed;
-  _position: absolute;
-  top: 12em;
-  left: 24em;
-  width: 10em;
-  height: 20em;
-  z-index: 100;
-  border: 1px solid #da4d4d;
-  background-color: #f8f8f6;
-  /* border-radius: 10%; */
 }
 
 /*********************************/
