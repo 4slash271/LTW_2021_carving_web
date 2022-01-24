@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/fabric.min.js"></script>
+    <script src="https://cdn.rawgit.com/magicien/undo-canvas/v0.1.3/undo-canvas.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     
     <title>환상 동물 릴레이 조각</title>
@@ -58,7 +60,57 @@
      </ul>
     </div>
 
-    <div class="wrapper"></div>
+    <div class="paint wrapper">
+      <h3 class="paint__title">
+        <span class="paint__title__text">play</span>
+       </h3>
+      <ul class="paint__wrap">  
+   <div class="imgPop">
+  <div id="imgPop--stage">
+    <button onclick="showImage()" class="imgPop--btn">
+      <span>Show</span>
+      
+    </button>
+    <div id="chosenImg"></div>
+  </div>
+</div>
+
+<!-------------------canvas--------------------->
+<div class="canvas">
+<canvas height="500" width="500" id="c"><div class="controls">
+  <div class="controls__btns">
+    
+    <button id="jsUndo" class="btn btn-info">
+      <i class="fas fa-undo"></i>
+    </button>      
+    <button id="jsRedo" class="btn btn-info">
+      <i class="fas fa-redo"></i>
+    </button>      
+    <button id="jsMode" class="btn btn-info">
+      <i class="fas fa-pencil-alt"></i>
+    </button>      
+    <button id="jsSend" class="btn btn-info">
+      <i class="fab fa-telegram-plane"></i>
+    </button>      
+  </div>
+</div></canvas>
+
+</div>
+<!------------------show dimension---------------------->
+<div class="dbox">
+
+
+  <div class="dbox--stage">
+    <div class="dbox--img"></div>
+  </div>
+</div>
+        
+       
+       
+      </ul>
+      <!------------------imgPop---------------------->
+
+    </div>
     
     <script> 
     function clickInfo(){
@@ -78,7 +130,11 @@
 
     <script src="../js/index.js"></script>
     <script src="../js/info.js"></script>
-    <script src="../js/three.js"></script>
+    <script src="../js/paint.js"></script>
+<script src="../js/undo_redo.js"></script>
+<script src="../js/show.js"></script>
+
+    <script src="../build/three.min.js"></script>
 		<script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
 		
 		<script src="../controls/DragControls.js"></script>
