@@ -67,32 +67,27 @@ body {
   box-shadow: 2px 3px 10px -1px rgba(114, 114, 114, 0.47);
 }
 .controls {
-  position: relative;
+  border: 1px solid red;
   display: flex;
+  z-index: 3;
 }
 .controls .controls__btns #jsUndo {
   position: absolute;
-  margin-top: -5em;
-  margin-left: 8em;
-  z-index: 2;
 }
 .controls .controls__btns #jsRedo {
   position: absolute;
   margin-top: -5em;
   margin-left: 10.5em;
-  z-index: 2;
 }
 .controls .controls__btns #jsMode {
   position: absolute;
   margin-top: -5em;
   margin-left: 13em;
-  z-index: 2;
 }
 .controls .controls__btns #jsSend {
   position: absolute;
   margin-top: -5em;
   margin-left: 15.5em;
-  z-index: 2;
 }
 
 .controls .controls__btns button {

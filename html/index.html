@@ -64,54 +64,46 @@
       <h3 class="paint__title">
         <span class="paint__title__text">play</span>
        </h3>
-      <ul class="paint__wrap">  
-   <div class="imgPop">
-  <div id="imgPop--stage">
-    <button onclick="showImage()" class="imgPop--btn">
-      <span>Show</span>
-      
-    </button>
-    <div id="chosenImg"></div>
-  </div>
-</div>
-
+      <div class="paint__wrap">  
+           <div class="imgPop">
+             <div id="imgPop--stage">
+                <button onclick="showImage()" class="imgPop--btn">
+                   <span>Show</span>
+                </button>
+             <div id="chosenImg"></div>
+             </div>
+           </div>
 <!-------------------canvas--------------------->
-<div class="canvas">
-<canvas height="500" width="500" id="c"><div class="controls">
-  <div class="controls__btns">
-    
-    <button id="jsUndo" class="btn btn-info">
-      <i class="fas fa-undo"></i>
-    </button>      
-    <button id="jsRedo" class="btn btn-info">
-      <i class="fas fa-redo"></i>
-    </button>      
-    <button id="jsMode" class="btn btn-info">
-      <i class="fas fa-pencil-alt"></i>
-    </button>      
-    <button id="jsSend" class="btn btn-info">
-      <i class="fab fa-telegram-plane"></i>
-    </button>      
-  </div>
-</div></canvas>
+      <div class="canvas">
+       <canvas height="500" width="500" id="c">
+        <div class="controls">
+        <div class="controls__btns"> 
+          <button id="jsUndo" class="btn btn-info">
+            <i class="fas fa-undo"></i>
+          </button>      
+          <button id="jsRedo" class="btn btn-info">
+            <i class="fas fa-redo"></i>
+          </button>      
+          <button id="jsMode" class="btn btn-info">
+            <i class="fas fa-pencil-alt"></i>
+          </button>      
+          <button id="jsSend" class="btn btn-info">
+            <i class="fab fa-telegram-plane"></i>
+          </button>      
+         </div>
+        </div>
+      </canvas>
 
-</div>
+      </div>
 <!------------------show dimension---------------------->
-<div class="dbox">
-
-
-  <div class="dbox--stage">
-    <div class="dbox--img"></div>
-  </div>
-</div>
-        
-       
-       
-      </ul>
-      <!------------------imgPop---------------------->
-
+      <div class="dbox">
+        <div class="dbox--stage">
+           <div class="dbox--img"></div>
+        </div>
+      </div>      
+      </div>
     </div>
-    
+   
     <script> 
     function clickInfo(){
       const infoLTW = document.querySelector(".infoLTW");
