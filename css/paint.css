@@ -20,7 +20,6 @@ body {
   position: absolute;
   right: -1em;
   font-family: 'Messapia-Regular';
-  border: 1px solid red;
 }
 
 .paint__wrap {
@@ -61,36 +60,26 @@ body {
 }
 /********************  imgPop  *************************/
 #c {
+  z-index: 1;
   height: 30em;
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 3px 10px -1px rgba(114, 114, 114, 0.47);
 }
-.controls {
-  border: 1px solid red;
-  display: flex;
+.canvas {
+  position: relative;
+}
+.paint__controls {
   z-index: 3;
-}
-.controls .controls__btns #jsUndo {
   position: absolute;
+  /* border: 1px solid red; */
+  height: 2.2em;
+  right: 1em;
+  bottom: 0;
 }
-.controls .controls__btns #jsRedo {
-  position: absolute;
-  margin-top: -5em;
-  margin-left: 10.5em;
+.paint__btns {
 }
-.controls .controls__btns #jsMode {
-  position: absolute;
-  margin-top: -5em;
-  margin-left: 13em;
-}
-.controls .controls__btns #jsSend {
-  position: absolute;
-  margin-top: -5em;
-  margin-left: 15.5em;
-}
-
-.controls .controls__btns button {
+.paint__btn {
   all: unset;
   width: 2.2em;
   height: 2.2em;
@@ -102,12 +91,12 @@ body {
   background-color: #ffffff;
   color: #6e6e6e;
 }
-.controls .controls__btns > button > i {
-  color: rgb(109, 109, 109);
+.paint__btn > i {
+  color: rgba(109, 109, 109, 0.815);
 }
 
-button:active {
-  transform: scale(0.97);
+button:hover {
+  transform: scale(1.05);
 }
 
 .controls__colors .controls__color img {

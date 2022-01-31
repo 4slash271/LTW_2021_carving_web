@@ -4,6 +4,7 @@
   align-items: center;
   font-size: 16px;
   color: #666666;
+  border: 1px solid red;
 }
 .gallery__title {
   position: relative;
@@ -21,10 +22,81 @@
 
 .gallery__wrap {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  margin-top: 2em;
+  margin-top: 5em;
+  justify-content: center;
+  /* border: rgb(82, 255, 14) 3px dotted; */
+  width: 79em;
+  height: 15em;
+  overflow: hidden;
 }
 
-/**********************************************/
+.gallery__inner {
+  /* border: 5px solid black; */
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.gallery__img {
+  /* width: 20%; */
+
+  margin: 1em;
+  /* max-width: 20em; */
+  /* max-height: 20em; */
+  /* width: 100px; */
+  /* height: 100px; */
+  text-align: center;
+
+  /* font-size: larger; */
+  /* border: rgb(165, 165, 165) 0.5px solid; */
+}
+
+img {
+  /* object-fit: cover; */
+  /* /* max-width: 15em; */
+  border-radius: 25px;
+  max-height: 15em;
+}
+.gallery__focus1 {
+  position: absolute;
+  left: 0;
+  width: 35em;
+  height: 40em;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.gallery__focus2 {
+  position: absolute;
+  right: 0;
+  width: 40em;
+  height: 40em;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+/********************** gallery arrow btns *********************/
+.gallery__btns {
+  position: relative;
+
+  width: calc(100% - 3em);
+  top: calc(50% - 5em);
+}
+.bt-angle {
+  font-size: 3em;
+  position: absolute;
+  cursor: pointer;
+  color: rgb(12, 12, 12);
+  opacity: 0.3;
+  transition: all 0.5s;
+  z-index: 99;
+}
+.bt-angle:hover {
+  opacity: 1;
+}
+.bt-angle.bt-prev {
+  left: 0;
+}
+.bt-angle.bt-next {
+  right: 0;
+}

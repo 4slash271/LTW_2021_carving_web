@@ -29,10 +29,77 @@
     </div>
 
     <div class="gallery wrapper">
+      <div class="gallery__btns">
+              <div class="fa fa-arrow-left bt-angle bt-prev"></div>
+              <div class="fa fa-arrow-right bt-angle bt-next"></div>
+            </div>
       <h3 class="gallery__title">
         <span class="gallery__title__text">gallery</span>
       </h3>
-      <ul class="gallery_wrap"></ul>
+      <ul class="gallery__wrap">
+          <div class="gallery__inner">
+  
+            <div class="gallery__img" id="clone--last">
+             <img src="../src/img/dummy1.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy3.png" alt="더미이미지"> 
+            </div>
+            <div class="gallery__img" >
+              <img src="../src/img/dummy2.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy3.png" alt="더미이미지"> 
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy1.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img" >
+              <img src="../src/img/dummy2.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy3.png" alt="더미이미지"> 
+            </div>
+            <div class="gallery__img" >
+              <img src="../src/img/dummy2.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy3.png" alt="더미이미지"> 
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy1.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img" >
+              <img src="../src/img/dummy2.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy3.png" alt="더미이미지"> 
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy1.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy1.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img" >
+              <img src="../src/img/dummy2.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy3.png" alt="더미이미지"> 
+            </div>
+            <div class="gallery__img">
+              <img src="../src/img/dummy1.png" alt="더미이미지">
+            </div>
+            <div class="gallery__img" id="clone--first">
+              <img src="../src/img/dummy2.png" alt="더미이미지">
+            </div>
+           
+            <!-- <img src="../src/img/dummy1.png" alt="배너"> -->
+          </div>
+          <div class="gallery__focus1"></div>
+            <div class="gallery__focus2"></div>
+       
+      </ul>
     </div>
 
     <div class="info wrapper">
@@ -41,7 +108,9 @@
       </h3>
      <ul class="info__wrap">  
        <li class="info__project card"> 
-            <a href="#">환상동물릴레이조각에 대하여</a>
+            <a href="#">
+              <h4>환상 동물 (소극적) 릴레이조각에 대하여</h4>
+            </a>
         </li>
         <li class="info__ltw card">
             <span class="info__ltw__btn"style="display: inline;"onclick="clickInfo()">루이즈더우먼</span>
@@ -75,23 +144,23 @@
            </div>
 <!-------------------canvas--------------------->
       <div class="canvas">
-       <canvas height="500" width="500" id="c">
-        <div class="controls">
-        <div class="controls__btns"> 
-          <button id="jsUndo" class="btn btn-info">
+        <div class="paint__controls">
+         <div class="paint__btns"> 
+          <button id="jsUndo" class="paint__btn">  
             <i class="fas fa-undo"></i>
           </button>      
-          <button id="jsRedo" class="btn btn-info">
+          <button id="jsRedo" class="paint__btn">
             <i class="fas fa-redo"></i>
           </button>      
-          <button id="jsMode" class="btn btn-info">
+          <button id="jsMode" class="paint__btn">
             <i class="fas fa-pencil-alt"></i>
           </button>      
-          <button id="jsSend" class="btn btn-info">
+          <button id="jsSend" class="paint__btn">
             <i class="fab fa-telegram-plane"></i>
           </button>      
          </div>
         </div>
+       <canvas height="500" width="500" id="c">
       </canvas>
 
       </div>
@@ -122,6 +191,7 @@
 
     <script src="../js/index.js"></script>
     <script src="../js/info.js"></script>
+    <script src="../js/gallery.js"></script>
     <script src="../js/paint.js"></script>
 <script src="../js/undo_redo.js"></script>
 <script src="../js/show.js"></script>
